@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Atlas Dev Days</title>
+    <meta name="description" content="Inscrivez-vous aux Atlas Dev Days, les 22 et 23 octobre 2026 à Marrakech.">
+    <link rel="icon" type="image/png" href="images/jbell.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0d0d11">
+    <meta property="og:title" content="Atlas Dev Days - Conférence web à Marrakech">
+    <meta property="og:description" content="Deux jours de conférences pour développeurs web, 22-23 octobre 2026.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Aller au contenu</a>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navigation principale">
+            <a href="index.html" class="brand">
+                <span class="brand-text">atlas dev days</span>
+                <img src="images/jbell.png" alt="Logo Atlas Dev Days" class="brand-icon-img" width="40" height="40">
+            </a>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">accueil</a></li>
+                    <li><a href="programme.html" class="nav-link">programme</a></li>
+                    <li><a href="intervenants.html" class="nav-link">intervenants</a></li>
+                </ul>
+                <a href="inscription.html" class="btn-subscribe">S'INSCRIRE</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero-content" id="main">
+        <div class="card form-card">
+            <p class="date">22-23 octobre 2026 &middot; Marrakech</p>
+            <h1 class="page-title">Inscription</h1>
+            <form action="#" method="post" class="registration-form">
+
+                <div class="form-group">
+                    <label for="fullname">Nom complet</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="ex : Jean Dupont" autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" name="email" placeholder="jean.dupont@email.com" autocomplete="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Format attendu : nom@domaine.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+212612345678" autocomplete="tel" pattern="(\+212|0)[5-7][0-9]{8}" title="Format attendu : +212612345678 ou 0612345678" required>
+                </div>
+
+                <fieldset class="form-group day-fieldset">
+                    <legend>Présence souhaitée</legend>
+                    <div class="day-selector">
+                        <label class="radio-card">
+                            <input type="radio" name="attendance" value="jeudi" required>
+                            <span class="radio-content"><strong>Jeudi</strong><small>22 oct.</small></span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="attendance" value="vendredi">
+                            <span class="radio-content"><strong>Vendredi</strong><small>23 oct.</small></span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="attendance" value="both" checked>
+                            <span class="radio-content"><strong>Les 2 jours</strong><small>22 &amp; 23 oct.</small></span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group consent">
+                    <label class="checkbox-label" for="consent">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <span>J'accepte que mes informations soient utilisées pour gérer mon inscription.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn submit-btn">S'inscrire</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Association Atlas Dev &middot; Atlas Dev Days, 22-23 octobre 2026, Marrakech</p>
+    </footer>
+
+</body>
+</html>
